@@ -1,0 +1,4 @@
+creation_rules:
+  - filename_regex: twitter\.yaml$
+    pgp: "820A5BE1B38C55E51C2CA163FA065807F03AB48B"
+  - pgp: "820A5BE1B38C55E51C2CA163FA065807F03AB48B"
