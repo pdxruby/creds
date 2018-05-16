@@ -30,12 +30,15 @@ but the commands are:
 
 This would add Jesse's key only for the `twitter.yaml` file.
 ```
-sops -r --add-pgp 820A5BE1B38C55E51C2CA163FA065807F03AB48B twitter.yaml
+sops -r -i --add-pgp 820A5BE1B38C55E51C2CA163FA065807F03AB48B twitter.yaml
 ```
+
+Note: If the public key being added is on a keyserver, it'll get pulled in
+automatically. If not, it needs to be in the local keyring.
 
 This would remove Jesse's key only for the `twitter.yaml` file.
 ```
-sops -r --rm-pgp 820A5BE1B38C55E51C2CA163FA065807F03AB48B twitter.yaml
+sops -r -i --rm-pgp 820A5BE1B38C55E51C2CA163FA065807F03AB48B twitter.yaml
 ```
 
 ## Key rotation
